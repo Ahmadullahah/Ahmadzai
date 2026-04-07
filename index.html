@@ -1,12 +1,11 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-	<title>Ahmadullah Ahmadzai | Economic Research &amp; Data Analysis</title>
+	<title>Ahmadullah Ahmadzai | Data Analyst</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Outfit:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
 	<style>
 		:root {
 			--bg:         #f9f6f2;
@@ -27,9 +26,9 @@
 			--shadow-xs:  0 1px 3px rgba(0,0,0,0.05), 0 2px 8px rgba(0,0,0,0.04);
 			--shadow:     0 4px 16px rgba(0,0,0,0.07), 0 1px 4px rgba(0,0,0,0.04);
 			--shadow-lg:  0 12px 48px rgba(0,0,0,0.10), 0 4px 16px rgba(0,0,0,0.06);
-			--font-serif: 'Cormorant Garamond', Georgia, serif;
-			--font-body:  'Outfit', sans-serif;
-			--font-mono:  'JetBrains Mono', monospace;
+			--font-serif: 'Playfair Display', Georgia, serif;
+			--font-body:  'Plus Jakarta Sans', sans-serif;
+			--font-mono:  'DM Mono', monospace;
 			--r:          12px;
 		}
 		*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -38,11 +37,9 @@
 			background: var(--bg);
 			color: var(--text);
 			font-family: var(--font-body);
-			font-size: 15px;
-			line-height: 1.75;
+			font-size: 15.5px;
+			line-height: 1.72;
 			overflow-x: hidden;
-			-webkit-font-smoothing: antialiased;
-			-moz-osx-font-smoothing: grayscale;
 		}
 
 		/* subtle dot-grid bg */
@@ -64,9 +61,9 @@
 			background: rgba(255,255,255,0.82);
 			backdrop-filter: blur(20px);
 			border: 1px solid var(--border2);
-			border-radius: 16px;
-			padding: 0.55rem 0.55rem 0.55rem 1.8rem;
-			box-shadow: 0 4px 24px rgba(61,74,92,0.08), 0 1px 4px rgba(0,0,0,0.04), inset 0 1px 0 rgba(255,255,255,0.8);
+			border-radius: 999px;
+			padding: 0.5rem 0.5rem 0.5rem 1.6rem;
+			box-shadow: 0 8px 32px rgba(61,74,92,0.12), 0 2px 8px rgba(0,0,0,0.06);
 		}
 		.nav-logo {
 			font-family: var(--font-serif); font-size: 1rem; font-weight: 700;
@@ -163,52 +160,11 @@
 			position: relative; display: flex;
 			flex-direction: column; align-items: center; gap: 1.4rem;
 		}
-		/* humanized profile card */
-		.profile-card {
-			width: 100%;
-			background: var(--surface);
-			border-radius: 24px;
-			border: 1px solid var(--border);
-			box-shadow: var(--shadow-lg), 0 0 0 5px rgba(255,255,255,0.7);
-			overflow: hidden;
-		}
 		.profile-photo {
-			width: 100%; aspect-ratio: 1/1;
+			width: 100%; aspect-ratio: 3/4;
+			border-radius: 24px 80px 24px 80px;
 			overflow: hidden; background: var(--bg3);
-			position: relative;
-		}
-		.profile-photo::after {
-			content: ''; position: absolute; bottom: 0; left: 0; right: 0;
-			height: 50%; pointer-events: none;
-			background: linear-gradient(to top, rgba(249,246,242,0.4), transparent);
-		}
-		.profile-info {
-			padding: 1rem 1.4rem 1.2rem;
-			border-top: 1px solid var(--border);
-		}
-		.profile-name {
-			font-family: var(--font-serif); font-size: 1.2rem; font-weight: 600;
-			color: var(--text); line-height: 1.2; margin-bottom: 0.18rem;
-		}
-		.profile-role {
-			font-size: 0.73rem; font-weight: 400; color: var(--muted);
-			letter-spacing: 0.01em; margin-bottom: 0.75rem;
-		}
-		.profile-status {
-			display: inline-flex; align-items: center; gap: 0.45rem;
-			background: rgba(80,180,120,0.10); border: 1px solid rgba(80,180,120,0.25);
-			border-radius: 999px; padding: 0.22rem 0.75rem;
-		}
-		.status-dot {
-			width: 7px; height: 7px; border-radius: 50%; background: #4caf80;
-			animation: pulse-green 2s ease-in-out infinite;
-		}
-		@keyframes pulse-green {
-			0%, 100% { box-shadow: 0 0 0 0 rgba(76,175,128,0.5); }
-			50%       { box-shadow: 0 0 0 5px rgba(76,175,128,0); }
-		}
-		.status-text {
-			font-size: 0.70rem; font-weight: 500; color: #3a8c60; letter-spacing: 0.01em;
+			box-shadow: var(--shadow-lg), 0 0 0 6px var(--surface), 0 0 0 7px var(--border);
 		}
 		.profile-photo img {
 			width: 100%; height: 100%;
@@ -477,7 +433,7 @@
 	<div class="hero-left">
 		<div class="hero-eyebrow">
 			<span class="eyebrow-line"></span>
-			<span class="eyebrow-text">Economic Research &amp; Data Analysis · <a href="https://github.com/Ahmadullahah" target="_blank">GitHub</a> · Göttingen, Germany</span>
+			<span class="eyebrow-text">Data Analyst · Göttingen, Germany</span>
 		</div>
 		<h1>
 			<span class="block">Ahmadullah</span>
@@ -503,23 +459,13 @@
 		<div class="profile-outer">
 			<div class="blob blob-rose"></div>
 			<div class="blob blob-slate"></div>
-			<div class="profile-card">
-				<div class="profile-photo">
-					<!-- Profile photo: place your image at images/Pro.jpg -->
-					<img src="images/Pro.jpg" alt="Ahmadullah Ahmadzai"
-						onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-					<div class="ph" style="display:none;">
-						<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-						<span style="font-size:0.75rem;color:var(--muted);">images/Pro.jpg</span>
-					</div>
-				</div>
-				<div class="profile-info">
-					<div class="profile-name">Ahmadullah Ahmadzai</div>
-					<div class="profile-role">Economic Research &amp; Data Analysis · Göttingen</div>
-					<div class="profile-status">
-						<span class="status-dot"></span>
-						<span class="status-text">Open to opportunities</span>
-					</div>
+			<div class="profile-photo">
+				<!-- Profile photo: place your image at images/Pro.jpg -->
+				<img src="images/Pro.jpg" alt="Ahmadullah Ahmadzai"
+					onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+				<div class="ph" style="display:none;">
+					<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+					<span style="font-size:0.75rem;color:var(--muted);">images/Pro.jpg</span>
 				</div>
 			</div>
 			<div class="stat-strip">
@@ -732,7 +678,7 @@
 			<div class="ct-left reveal">
 				<p class="sk3" style="margin-bottom:0.8rem;">Contact</p>
 				<h2>Let's build something <em>meaningful</em> together</h2>
-				<p style="margin-top:1rem;">Open to roles in economic research, data analysis, and policy consulting — specializing in development economics, humanitarian data, and evidence-based decision-making.</p>
+				<p style="margin-top:1rem;">Open to data analyst roles, research collaborations, and consulting in development economics, humanitarian data, and policy research.</p>
 			</div>
 			<div class="ct-links reveal d1">
 				<a href="https://github.com/Ahmadullahah" target="_blank" class="ctlink">
@@ -747,11 +693,11 @@
 					</div>
 					<div><div class="ctk">LinkedIn</div><div class="ctv">ahmadullah-ahmadzai</div></div>
 				</a>
-				<a href="/cdn-cgi/l/email-protection#4001282d2124352c2c21286e21282d21243a21297600272d21292c6e232f2d" class="ctlink">
+				<a href="mailto:Ahmadullah.ahmadzai6@gmail.com" class="ctlink">
 					<div class="cti">
 						<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
 					</div>
-					<div><div class="ctk">Email</div><div class="ctv"><span class="__cf_email__" data-cfemail="13527b7e7277667f7f727b3d727b7e727769727a2553747e727a7f3d707c7e">[email&#160;protected]</span></div></div>
+					<div><div class="ctk">Email</div><div class="ctv">Ahmadullah.ahmadzai6@gmail.com</div></div>
 				</a>
 			</div>
 		</div>
@@ -761,19 +707,22 @@
 <!-- FOOTER -->
 <footer>
 	<span>© 2026 Ahmadullah Ahmadzai</span>
-	<span>Economic Research &amp; Data Analysis · <a href="https://github.com/Ahmadullahah" target="_blank">GitHub</a> · Göttingen, Germany</span>
+	<span>Data Analyst · <a href="https://github.com/Ahmadullahah" target="_blank">GitHub</a> · Göttingen, Germany</span>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-	// Trigger reveals immediately for elements already in viewport
+<script>
 	const obs = new IntersectionObserver(entries => {
 		entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-	}, { threshold: 0.05, rootMargin: '0px 0px -20px 0px' });
+	}, { threshold: 0.08 });
 	document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
-	// Fallback: make all visible after short delay if IntersectionObserver doesn't fire
-	setTimeout(() => {
-		document.querySelectorAll('.reveal:not(.visible)').forEach(el => el.classList.add('visible'));
-	}, 800);
 
 	const secs = document.querySelectorAll('[id]');
-	const lnks = document.querySelectorAll('.nav-link
+	const lnks = document.querySelectorAll('.nav-links a');
+	window.addEventListener('scroll', () => {
+		let cur = '';
+		secs.forEach(s => { if (window.scrollY >= s.offsetTop - 130) cur = s.id; });
+		lnks.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + cur));
+	});
+</script>
+</body>
+</html>
