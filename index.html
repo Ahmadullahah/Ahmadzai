@@ -193,27 +193,6 @@
 			bottom: 60px; left: -20px;
 		}
 
-		/* floating stat strip */
-		.stat-strip {
-			display: flex; gap: 0; width: 100%;
-			background: var(--surface); border: 1px solid var(--border);
-			border-radius: var(--r); overflow: hidden; box-shadow: var(--shadow);
-		}
-		.stat-item {
-			flex: 1; padding: 0.9rem 1rem; text-align: center;
-			border-right: 1px solid var(--border);
-		}
-		.stat-item:last-child { border-right: none; }
-		.stat-item .sv {
-			font-family: var(--font-serif); font-size: 1.3rem; font-weight: 700;
-			color: var(--slate); line-height: 1; display: block;
-		}
-		.stat-item .sk2 {
-			font-family: var(--font-mono); font-size: 0.6rem;
-			letter-spacing: 0.1em; text-transform: uppercase;
-			color: var(--muted); margin-top: 0.2rem; display: block;
-		}
-
 		/* ── SECTION COMMONS ── */
 		.sw { padding: 4.5rem 5rem; }
 		.sw.alt { background: var(--bg2); }
@@ -468,20 +447,7 @@
 					<span style="font-size:0.75rem;color:var(--muted);">images/Pro.jpg</span>
 				</div>
 			</div>
-			<div class="stat-strip">
-				<div class="stat-item">
-					<span class="sv">2</span>
-					<span class="sk2">Universities</span>
-				</div>
-				<div class="stat-item">
-					<span class="sv">4+</span>
-					<span class="sk2">Projects</span>
-				</div>
-				<div class="stat-item">
-					<span class="sv">5</span>
-					<span class="sk2">Languages</span>
-				</div>
-			</div>
+		
 		</div>
 	</div>
 </section>
